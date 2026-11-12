@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+
+    tools {
+        nodejs 'node20'    // Use the exact name from Manage Jenkins → Tools
+    }
+
+    stages {
+
+        stage('Check Node Version') {
+            steps {
+                sh '''
+                    node -v
+                    npm -v
+                '''
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+
+        stage('Install Playwright Browsers') {
+            steps {
+                sh 'npx playwright install'
+            }
+        }
+
+        stage('Run Playwright Tests') {
+            steps {
+                sh 'npx playwright test'
+            }
+        }
+    }
+}
