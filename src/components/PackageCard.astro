@@ -1,0 +1,11 @@
+---
+const { name, price, popular, features, for: audience } = Astro.props;
+const perMonth = !price.includes('+');
+---
+<article class={`card plan ${popular ? 'popular' : ''}`}>
+  {popular && <span class="badge">Most chosen</span>}
+  <h3>{name}</h3>
+  <div class="price">{price} <small>{perMonth ? '/ month' : '/ month, by quote'}</small></div>
+  <p>{audience}</p>
+  <ul>{features.map((f) => <li>{f}</li>)}</ul>
+</article>

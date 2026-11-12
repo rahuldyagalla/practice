@@ -1,0 +1,15 @@
+---
+import site from '../data/site.json';
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const links = [['/', 'Home'], ['/services', 'Services'], ['/packages', 'AMC Packages'], ['/about', 'About'], ['/contact', 'Contact']];
+---
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/">{site.name}</a>
+    <nav aria-label="Main">
+      {links.map(([href, label]) => (
+        <a href={href} aria-current={path === href ? 'page' : undefined}>{label}</a>
+      ))}
+    </nav>
+  </div>
+</header>

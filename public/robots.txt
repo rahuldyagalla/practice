@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://varshaitsolutions.in/sitemap-index.xml

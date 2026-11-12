@@ -1,0 +1,6 @@
+[
+ {"name":"Basic IT Support","price":"₹7,500","popular":false,"for":"Small schools and training institutes","features":["Up to 25 devices","2 on-site visits a month","Remote support in working hours","Monthly report"]},
+ {"name":"Standard IT AMC","price":"₹12,000","popular":true,"for":"Schools with a computer lab and Wi-Fi","features":["Up to 60 devices","4 on-site visits a month","Network and printer support","Backup monitoring","Monthly report"]},
+ {"name":"Advanced IT AMC","price":"₹18,000","popular":false,"for":"Colleges with servers and CCTV","features":["Up to 120 devices","8 on-site visits a month","Server, CCTV and firewall care","Priority response","Monthly report"]},
+ {"name":"Complete IT Management","price":"₹25,000–₹40,000+","popular":false,"for":"Campuses that want an outsourced IT department","features":["Custom device count","Dedicated support schedule","Full infrastructure management","Quarterly IT review"]}
+]

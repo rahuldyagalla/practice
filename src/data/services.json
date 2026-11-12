@@ -1,0 +1,17 @@
+[
+ {"title":"Desktop & Laptop Support","summary":"Troubleshooting, OS installs, upgrades, antivirus and remote support."},
+ {"title":"Networking & Infrastructure","summary":"LAN, Wi-Fi, routers, switches, VLANs, firewalls and structured cabling."},
+ {"title":"Server Administration","summary":"Windows/Linux servers, Active Directory, Group Policy, virtualization, backups."},
+ {"title":"Computer Lab Management","summary":"Lab setup, centralized users, exam software, preventive maintenance."},
+ {"title":"Printer & Peripheral Support","summary":"Printers, scanners, print servers, projectors and interactive displays."},
+ {"title":"CCTV & Security Systems","summary":"IP cameras, DVR/NVR, remote viewing, biometric attendance, access control."},
+ {"title":"Cybersecurity","summary":"Endpoint protection, MFA, password and USB policies, phishing awareness."},
+ {"title":"Backup & Disaster Recovery","summary":"Scheduled backups, restore testing, cloud backup and recovery planning."},
+ {"title":"Website, Email & Cloud","summary":"Domains, hosting, SSL, Microsoft 365 and Google Workspace administration."},
+ {"title":"Smart Classroom & EdTech","summary":"Projectors, flat panels, audio, video conferencing, LMS and online exams."},
+ {"title":"IT Helpdesk","summary":"Ticketing, prioritization, on-site and remote support, monthly ticket analysis."},
+ {"title":"Software & Application Support","summary":"Office, Tally, School/College ERP, licenses and vendor coordination."},
+ {"title":"IT Asset & Inventory","summary":"Asset tagging, warranty and license tracking, monthly asset reports."},
+ {"title":"IT Procurement & Installation","summary":"Computers, servers, network gear, CCTV, UPS and server room setup."},
+ {"title":"IT Consultation","summary":"Infrastructure audits, budgets, network planning, IT policy and staff training."}
+]

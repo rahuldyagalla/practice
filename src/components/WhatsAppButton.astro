@@ -1,0 +1,5 @@
+---
+import site from '../data/site.json';
+const msg = encodeURIComponent('Hi, I need IT support for my school/college.');
+---
+<a class="wa" href={`https://wa.me/${site.whatsapp}?text=${msg}`} target="_blank" rel="noopener">Chat on WhatsApp</a>

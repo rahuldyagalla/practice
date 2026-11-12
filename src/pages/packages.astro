@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import PackageCard from '../components/PackageCard.astro';
+import packages from '../data/packages.json';
+---
+<Base title="Monthly AMC Packages" description="Monthly IT AMC plans for schools and colleges in Hyderabad, starting at ₹7,500.">
+  <section class="band">
+    <div class="wrap">
+      <h1>Monthly AMC packages</h1>
+      <p class="muted">Prices are starting rates. The final quote depends on equipment quantity, infrastructure complexity, support hours, travel and scope.</p>
+      <div class="grid">{packages.map((p) => <PackageCard {...p} />)}</div>
+      <h2 style="margin-top:40px">Quoted separately</h2>
+      <p>New computer lab setup, office network, server installation and migration, CCTV, firewall, Wi-Fi projects, smart classrooms, server rooms and cloud migration.</p>
+      <a class="btn" href="/contact">Get a quote</a>
+    </div>
+  </section>
+</Base>

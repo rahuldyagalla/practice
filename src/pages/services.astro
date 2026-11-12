@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import services from '../data/services.json';
+---
+<Base title="IT Services" description="Desktop, network, server, CCTV, lab, backup, cloud and smart classroom support for schools and colleges.">
+  <section class="band">
+    <div class="wrap">
+      <h1>IT services for educational institutions</h1>
+      <p class="muted">Everything below can be covered under a monthly plan or quoted as a one-time project.</p>
+      <div class="grid">{services.map((s) => <ServiceCard {...s} />)}</div>
+    </div>
+  </section>
+</Base>

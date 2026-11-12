@@ -1,0 +1,13 @@
+---
+import site from '../data/site.json';
+---
+<footer>
+  <div class="wrap">
+    <strong style="color:#fff">{site.name}</strong>
+    <p style="margin:4px 0 12px">{site.tagline}</p>
+    <p style="margin:0">
+      <a href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a> ·
+      <a href={`mailto:${site.email}`}>{site.email}</a> · {site.city}
+    </p>
+  </div>
+</footer>

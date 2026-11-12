@@ -1,0 +1,68 @@
+---
+import Base from '../layouts/Base.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import services from '../data/services.json';
+---
+<Base title="IT Support for Schools & Colleges in Hyderabad">
+  <section class="band">
+    <div class="wrap hero">
+      <div>
+        <h1>Computer labs, Wi-Fi and servers that work when classes start.</h1>
+        <p class="muted">Fixed monthly IT support for schools and colleges in Hyderabad: scheduled visits, quick fixes and a report every month.</p>
+        <div class="row">
+          <a class="btn" href="/contact">Book a free IT audit</a>
+          <a class="btn alt" href="/packages">See monthly packages</a>
+        </div>
+      </div>
+      <aside class="report" aria-label="Sample monthly report">
+        <h3>Monthly support report</h3>
+        <small>Sample for a school with 60 devices</small>
+        <dl>
+          <div><dt>Tickets resolved</dt><dd>42 of 44</dd></div>
+          <div><dt>Average response</dt><dd>1 h 40 min</dd></div>
+          <div><dt>Lab uptime</dt><dd>99.2%</dd></div>
+          <div><dt>Backups verified</dt><dd>31 of 31</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="band tint">
+    <div class="wrap">
+      <h2>What you get</h2>
+      <div class="grid">
+        <div class="card"><h3>Less downtime</h3><p>Preventive maintenance finds problems before exams and admissions do.</p></div>
+        <div class="card"><h3>One fixed monthly cost</h3><p>No surprise repair bills. Parts and big projects are quoted separately.</p></div>
+        <div class="card"><h3>One person to call</h3><p>Computers, network, CCTV, servers and backups handled by a single team.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>What we look after</h2>
+      <div class="grid">{services.slice(0, 6).map((s) => <ServiceCard {...s} />)}</div>
+      <p style="margin-top:18px"><a href="/services">See all {services.length} service areas</a></p>
+    </div>
+  </section>
+
+  <section class="band tint">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><h3>Free audit</h3><p>We visit and check your lab, network, backups and CCTV.</p></li>
+        <li><h3>Proposal</h3><p>You get a short report and a fixed monthly quote.</p></li>
+        <li><h3>Monthly support</h3><p>Scheduled visits plus remote help whenever something breaks.</p></li>
+        <li><h3>Monthly report</h3><p>Tickets, downtime and recommendations, in plain language.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>Not sure what your institution needs?</h2>
+      <p class="muted">Tell us how many computers you have and what keeps going wrong. We will suggest a plan.</p>
+      <a class="btn" href="/contact">Request a quote</a>
+    </div>
+  </section>
+</Base>
